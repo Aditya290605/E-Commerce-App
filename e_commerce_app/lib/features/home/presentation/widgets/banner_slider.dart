@@ -23,10 +23,7 @@ class BannerSlider extends StatelessWidget {
                 child: Stack(
                   fit: StackFit.expand,
                   children: [
-                    Image.network(
-                      banner['image']!,
-                      fit: BoxFit.cover,
-                    ),
+                    Image.network(banner['image']!, fit: BoxFit.cover),
                     Container(
                       alignment: Alignment.bottomLeft,
                       padding: const EdgeInsets.all(12),
@@ -58,4 +55,4 @@ class BannerSlider extends StatelessWidget {
       ),
     );
   }
-} 
+}

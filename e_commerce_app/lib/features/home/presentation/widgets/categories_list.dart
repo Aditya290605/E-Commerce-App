@@ -28,14 +28,11 @@ class CategoriesList extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 8),
-              Text(
-                category.name,
-                style: const TextStyle(fontSize: 14),
-              ),
+              Text(category.name, style: const TextStyle(fontSize: 14)),
             ],
           );
         },
       ),
     );
   }
-} 
+}

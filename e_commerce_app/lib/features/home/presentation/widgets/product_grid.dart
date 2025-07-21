@@ -32,7 +32,9 @@ class ProductGrid extends StatelessWidget {
               );
             },
             child: Card(
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(16),
+              ),
               elevation: 2,
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
@@ -51,12 +53,19 @@ class ProductGrid extends StatelessWidget {
                     const SizedBox(height: 8),
                     Text(
                       product.name,
-                      style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                      style: const TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                      ),
                     ),
                     const SizedBox(height: 4),
                     Text(
-                      ' 24${product.price.toStringAsFixed(2)}',
-                      style: const TextStyle(color: Colors.deepPurple, fontWeight: FontWeight.bold, fontSize: 15),
+                      "\$ ${product.price.toStringAsFixed(2)}",
+                      style: const TextStyle(
+                        color: Colors.deepPurple,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 15,
+                      ),
                     ),
                     const Spacer(),
                     SizedBox(
@@ -64,7 +73,9 @@ class ProductGrid extends StatelessWidget {
                       child: ElevatedButton(
                         onPressed: () {},
                         style: ElevatedButton.styleFrom(
-                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(8),
+                          ),
                           padding: const EdgeInsets.symmetric(vertical: 8),
                         ),
                         child: const Text('Add to Cart'),
@@ -79,4 +90,4 @@ class ProductGrid extends StatelessWidget {
       ),
     );
   }
-} 
+}
